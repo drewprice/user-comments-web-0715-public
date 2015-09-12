@@ -1,7 +1,7 @@
 <head>
   <script type="text/javascript" src="lib/jquery-2.1.1.min.js"></script>
   <script type="text/javascript" src="lib/comments.js"></script>
-  
+
 </head>
 <body>
 <section id="comments">
@@ -18,19 +18,22 @@
       </p>
     </div>
   </div>
-  
+
   <button id="show-comment-form">add comment</button>
-  
+
   <form id="add-comment" action="#" method="post">
     <label for="comment-name">Name</label><br>
     <input type="text" id="comment-name" name="comment-name"><br>
-    <span id="com-name-error">Name must be more than 3 characters!</span><br>
+    <span style="color: red" id="com-name-error">Name must be more than 3 characters!</span><br>
+
     <label for="com-email">Email</label><br>
     <input type="text" id="com-email" name="com-email"><br>
-    <span id="com-email-error">Must be a valid email!</span><br>
+    <span style="color: red" id="com-email-error">Must be a valid email!</span><br>
+
     <label for="comment-name">Comment</label><br>
     <textarea id="comment" name="comment" rows="5"></textarea><br>
-    <span id="comment-error">Comment text required!</span><br>
+    <span style="color: red" id="comment-error">Comment text required!</span><br>
+
     <input type="submit" value="submit">
     <input id="cancel" type="reset" value="cancel">
   </form>
