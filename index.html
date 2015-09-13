@@ -1,6 +1,8 @@
 <head>
   <script type="text/javascript" src="lib/jquery-2.1.1.min.js"></script>
-  <script type="text/javascript" src="lib/comments.js"></script>
+  <script type="text/javascript" src="lib/compiled/comment.js"></script>
+  <script type="text/javascript" src="lib/compiled/comment-form.js"></script>
+  <script type="text/javascript" src="lib/compiled/app.js"></script>
 
 </head>
 <body>
@@ -9,30 +11,30 @@
   <h1>User Comments</h1>
 
   <div id="posts">
-    <div class="newcomment">
+    <div class="new_comment">
       <span class="name">Lisa Gould</span>
       <span class="email">lisa.gould7684@ymail.com</span>
       <span class="date">09/03/2012</span>
-      <p class="comment">
+      <p class="comment_body">
         Great reading! Thank you Econ News... I would like to see more articles from Chef Boullion. I'm enjoying the keylime pie recipe with friends.
       </p>
     </div>
   </div>
 
-  <button id="show-comment-form">add comment</button>
+  <button id="show_comment_form">add comment</button>
 
-  <form id="add-comment" action="#" method="post">
-    <label for="comment-name">Name</label><br>
-    <input type="text" id="comment-name" name="comment-name"><br>
-    <span style="color: red" id="com-name-error">Name must be more than 3 characters!</span><br>
+  <form id="add_comment" action="#" method="post">
+    <label for="comment_name">Name</label><br>
+    <input type="text" id="comment_name" name="comment_name"><br>
+    <span style="color: red" id="comment_name_error">Name must be more than 3 characters!</span><br>
 
-    <label for="com-email">Email</label><br>
-    <input type="text" id="com-email" name="com-email"><br>
-    <span style="color: red" id="com-email-error">Must be a valid email!</span><br>
+    <label for="comment_email">Email</label><br>
+    <input type="text" id="comment_email" name="comment_email"><br>
+    <span style="color: red" id="comment_email_error">Must be a valid email!</span><br>
 
-    <label for="comment-name">Comment</label><br>
-    <textarea id="comment" name="comment" rows="5"></textarea><br>
-    <span style="color: red" id="comment-error">Comment text required!</span><br>
+    <label for="comment_name">Comment</label><br>
+    <textarea id="comment_body" name="comment_body" rows="5"></textarea><br>
+    <span style="color: red" id="comment_body_error">Comment text required!</span><br>
 
     <input type="submit" value="submit">
     <input id="cancel" type="reset" value="cancel">

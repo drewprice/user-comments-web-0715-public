@@ -2,7 +2,9 @@
 javascripts:
   files:
     - lib/jquery-2.1.1.min.js
-    - lib/comments.js
+    - lib/compiled/comment.js
+    - lib/compiled/comment-form.js
+    - lib/compiled/app.js
   specs:
     - spec/jasmine-jquery.js
     - spec/comments-spec.js
